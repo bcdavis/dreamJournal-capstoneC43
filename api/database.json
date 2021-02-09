@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "email": "ben@gmail.com",
+      "name": "Ben",
+      "id": 1
+    },
+    {
+      "email": "shram@gmail.com",
+      "name": "Sarah",
+      "id": 2
+    }
+  ],
+  "dreamList": [
+    {
+      "id": 1,
+      "userId": 1,
+      "typeId": 1,
+      "title": "My first dream",
+      "text": "It was a good dream",
+      "context": "I was born yesterday",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 4 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "typeId": 1,
+      "title": "My second dream",
+      "text": "It was a good dream",
+      "context": "I ran around the house until I got tired",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 5 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": true
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "typeId": 1,
+      "title": "My third dream",
+      "text": "It was a good dream",
+      "context": "I killed a bug yesterday",
+      "audioFileLink": "AudioLinkHere...",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 7 2021",
+      "isRecurrent": true,
+      "isLucid": true,
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "typeId": 2,
+      "title": "My first dream",
+      "text": "It was a bad, scary dream",
+      "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "1 22 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "typeId": 1,
+      "title": "Hello World",
+      "text": "I travelled around the world and said hello to everyone I met.",
+      "context": "We learned about Amelia Earhart yesterday in history class.",
+      "audioFileLink": "Hello_World_audio.mp4",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 3 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "typeId": 2,
+      "title": "My first dream",
+      "text": "It was a bad, scary dream",
+      "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "1 22 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "typeId": 1,
+      "title": "Hello World",
+      "text": "I travelled around the world and said hello to everyone I met.",
+      "context": "We learned about Amelia Earhart yesterday in history class.",
+      "audioFileLink": "Hello_World_audio.mp4",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 3 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "typeId": 2,
+      "title": "My first dream",
+      "text": "It was a bad, scary dream",
+      "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "1 22 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "typeId": 1,
+      "title": "Hello World",
+      "text": "I travelled around the world and said hello to everyone I met.",
+      "context": "We learned about Amelia Earhart yesterday in history class.",
+      "audioFileLink": "Hello_World_audio.mp4",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 3 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "typeId": 2,
+      "title": "My first dream",
+      "text": "It was a bad, scary dream",
+      "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "1 22 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "typeId": 1,
+      "title": "Hello World",
+      "text": "I travelled around the world and said hello to everyone I met.",
+      "context": "We learned about Amelia Earhart yesterday in history class.",
+      "audioFileLink": "Hello_World_audio.mp4",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 3 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "typeId": 2,
+      "title": "My first dream",
+      "text": "It was a bad, scary dream",
+      "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "1 22 2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "typeId": 1,
+      "title": "Hello World",
+      "text": "I travelled around the world and said hello to everyone I met. I travelled around the world and said hello to everyone I met. I travelled around the world and said hello to everyone I met.",
+      "context": "We learned about Amelia Earhart yesterday in history class.",
+      "audioFileLink": "Hello_World_audio.mp4",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2 3 2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "dream"
+    },
+    {
+      "id": 2,
+      "name": "nightmare"
+    }
+  ]
+}
