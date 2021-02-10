@@ -11,17 +11,39 @@ export const JournalList = () => {
     console.log("--------- Journal List Page ------------");
     const userId = localStorage.getItem("kennel_customer")
     // This state changes when `getEntries()` is invoked below
-     const { entries, actUser, getEntries, getActUser } = useContext(JournalContext)
+     const { entries, getEntries } = useContext(JournalContext)
      
      const history = useHistory();
 
-     
+     const [ sortedDreams, setSortedDreams ] = useState([]);
+
+    // console.log(entries, sortedDreams);
+    
      //useEffect - reach out to the api for data, update state, and re-renders the component
-     useEffect(() => {
-         getActUser()
-         getEntries()
-         console.log("actUser: ", actUser[0]);
-     }, []) 
+    useEffect(() => {
+        console.log("JournalList -- useEffect -- getEntries");
+        getEntries()
+    }, []) 
+
+    useEffect(() => {
+        console.log("JournalList -- useEffect -- sortDreamsByDate");
+        sortDreamsByDate(entries)
+    }, [entries])
+
+     const sortDreamsByDate = (inputEntries) => {
+         let sortedEntries = inputEntries;
+            sortedEntries.sort((a,b) => {
+                // console.log("a: ", (new Date(a.dreamdate)), " -- b: ", (new Date(b.dreamdate)));
+                if((new Date(a.dreamdate)) > (new Date(b.dreamdate))) return 1;
+                if((new Date(a.dreamdate)) < (new Date(b.dreamdate))) return -1;
+                return 0;
+        });
+        // console.log("sortedEntries: ", sortedEntries); // need this for the useEffect to reach this function
+        sortedEntries.reverse(); // order dreams from most newest to oldest
+        setSortedDreams(sortedEntries);
+
+
+     }
 
  
      return (	
@@ -32,7 +54,7 @@ export const JournalList = () => {
 				<Col >
                     <article className="entryList">
                         {
-                            entries.map(item => { //journalArray.map
+                            sortedDreams.map(item => { //journalArray.map
 
                                 return (
                                     <JournalEntry item={item} key={item.id} />

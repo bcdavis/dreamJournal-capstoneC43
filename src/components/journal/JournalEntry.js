@@ -36,7 +36,7 @@ export const JournalEntry = ({ item }) => {
 
 	const handleStarUpdate = () => {
 		setIsLoading(true);
-		console.log("Old item: ", item);
+		// console.log("Old item: ", item);
 
 		const newItemObj = { ...item };
 		if(newItemObj.isFavorite){
@@ -45,12 +45,12 @@ export const JournalEntry = ({ item }) => {
 		else {
 			newItemObj.isFavorite = true;
 		}
-		console.log("New item: ", newItemObj);
+		// console.log("New item: ", newItemObj);
 		updateEntry(newItemObj);
 	}
 
 	useEffect(() => {
-        console.log("JournalEntry -- useEffect");
+        // console.log("JournalEntry -- useEffect");
 		handleClose();
 		setIsLoading(false)
 	}, [item])
@@ -88,6 +88,14 @@ export const JournalEntry = ({ item }) => {
     // By clickin gon a jounral entry on the journalList page, it navigates you to the preview page for that entry
 	// const navToJournalEntry= (itemId) => {
     //     history.push(`/journalEntry/edit/${itemId}`)
+    // }
+
+    // const showDateDetail = () => {
+    //     let dt = new Date(item.dreamdate);
+    //     console.log("Item Date Details: ----- ", dt.toDateString());
+    //     console.log("getDate() : " + dt.getDate() );  
+    //     console.log("getMonth() : " + (dt.getMonth()+1));  
+    //     console.log("getTime() (ms): " + dt.getTime());
     // }
 
 
@@ -140,7 +148,7 @@ export const JournalEntry = ({ item }) => {
 				</Card.Header>
 				<Card.Body className="card-right round-corners" >
 					<div className="card2-content flex-row padding-10px">
-						<div className="card-content-mid flex-col" onClick={() => {history.push(`/journalEntry/${item.title}`)}}>
+						<div className="card-content-mid flex-col" onClick={() => {history.push(`/journalEntry/${item.id}`)}}>
 
 							<div className="card2-content-preview">
 
@@ -163,6 +171,7 @@ export const JournalEntry = ({ item }) => {
 									<Dropdown.Item href="#/action-2" onClick={handleShow}>Delete</Dropdown.Item>
 								</Dropdown.Menu>
 							</Dropdown>
+                            {/* <Button type="button" className="logDateDataBtn" onClick={showDateDetail}></Button> */}
 						</div>
 						
 					</div>

@@ -14,6 +14,7 @@ This component establishes what data can be used.
 export const JournalProvider = (props) => {
     const [ entries, setEntries ] = useState([]); // State hook
     const [ actUser, setActUser ] = useState({});
+    const [ types, setTypes] = useState([]) // State hook
     const userId = localStorage.getItem("kennel_customer");
     //const [ searchTerms, setSearchTerms ] = useState("") // State hook for searching 
 
@@ -86,6 +87,12 @@ export const JournalProvider = (props) => {
             .then(setActUser)
     }
 
+    const getDreamTypes = () => {
+        return fetch(`http://localhost:8088/types`) // hopefully this fetches the current user object
+            .then(res => res.json()) // return all entries from database
+            .then(setTypes)
+    }
+
     
 
     /*
@@ -102,7 +109,7 @@ export const JournalProvider = (props) => {
     // we define which values we want to put in context.Provider
     return (
         <JournalContext.Provider value={{
-            entries, actUser, getEntries, addEntry, getEntryById, deleteEntry, updateEntry, getActUser
+            entries, actUser, types, getEntries, addEntry, getEntryById, deleteEntry, updateEntry, getActUser, getDreamTypes
         }}>
             {props.children}
         </JournalContext.Provider>
