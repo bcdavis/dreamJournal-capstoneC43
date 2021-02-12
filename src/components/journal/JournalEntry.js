@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Card, Button, Dropdown, Modal } from 'react-bootstrap';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { JournalContext } from "./JournalProvider.js" // gives us deleteEntry, updateEntry
 
-export const JournalEntry = ({ item }) => {
+export const JournalEntry = ({ entryItem }) => {
 	// console.log("JournalEntry{item}", item);
     const { deleteEntry, updateEntry } = useContext(JournalContext);
     // deleteEntry takes an entryId, updateEntry takes an entryObj
+
+	const item = entryItem;
 
 	//controls the clickable-ness of the checkbox
 	const [isLoading, setIsLoading] = useState(true);
@@ -127,6 +129,15 @@ export const JournalEntry = ({ item }) => {
 						</div>
 					</div>
 					<div className="card2-attributes flex-row card2-top-right">
+						{(item.typeId === "1") ? 
+							<div className="attr-text2">
+								<p>Dream</p>
+							</div>
+						: 
+							<div className="attr-text2">
+								<p>Nightmare</p>
+							</div> 
+						}
 						{item.isLucid ? 
 							<div className="attr-text2">
 								<p>Lucid</p>
@@ -144,11 +155,12 @@ export const JournalEntry = ({ item }) => {
 								</div>
 							</div>
 						: null }
+						
 					</div>
 				</Card.Header>
 				<Card.Body className="card-right round-corners" >
 					<div className="card2-content flex-row padding-10px">
-						<div className="card-content-mid flex-col" onClick={() => {history.push(`/journalEntry/${item.id}`)}}>
+						<div className="card-content-mid flex-col">
 
 							<div className="card2-content-preview">
 
@@ -171,7 +183,7 @@ export const JournalEntry = ({ item }) => {
 									<Dropdown.Item href="#/action-2" onClick={handleShow}>Delete</Dropdown.Item>
 								</Dropdown.Menu>
 							</Dropdown>
-                            {/* <Button type="button" className="logDateDataBtn" onClick={showDateDetail}></Button> */}
+							<Link className="previewBtn" key={item.id} to={`/journalList/${item.id}`}>Read</Link>
 						</div>
 						
 					</div>

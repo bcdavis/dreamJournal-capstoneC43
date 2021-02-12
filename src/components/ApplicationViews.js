@@ -30,20 +30,24 @@ export const ApplicationViews = () => {
             
             <JournalProvider>
                 <Switch>
-                    <Route path="/journalEntry/edit/:journalEntryId(\d+)">
-                        <JournalEntryForm />
+                    <Route path="/journalList/edit/:entryItemId(\d+)" render={
+                            props => <JournalEntryForm {...props} />
+                    }>
                     </Route>
 
-                    <Route path="/journalEntry/:journalEntryId(\d+)">                       
+                    <Route path="/journalList/:entryItemId(\d+)"render={
+                            props => <JournalEntryPreview {...props} />
+                    }>                       
                         <JournalEntryPreview />
                     </Route>
 
-                    <Route path="/add">                        
+                    <Route exact path="/add">                        
                         <JournalEntryForm />
                     </Route>
 
-                    <Route exact path="/">                       
-                        <JournalList />
+                    <Route exact path="/journalList" render={
+                            props => <JournalList {...props} />
+                    }>
                     </Route>
                 </Switch>
             </JournalProvider>

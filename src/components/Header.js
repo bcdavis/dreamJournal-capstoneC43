@@ -28,13 +28,13 @@ export const Header = () => {
   return (
     <>
       <Navbar bg="primary" expand="lg" expanded={expanded} className="navbar-dark">
-        <Navbar.Brand href="/">REM • LOG</Navbar.Brand>
+        <Navbar.Brand href="/journalList">REM • LOG</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto navbar-nav " activeKey="/" onClick={() => setExpanded(false)}> 
             {isLoggedIn &&
               <>
-                <Nav.Item className="text-right"><NavLink className="nav-link" to="/">My Journal</NavLink></Nav.Item>
+                <Nav.Item className="text-right"><NavLink className="nav-link" to="/journalList">My Journal</NavLink></Nav.Item>
                 {/* <Nav.Item className="text-right"><RRNavLink className="nav-link" to="/stats">Dream Stats</RRNavLink></Nav.Item> */}
                 <Nav.Item className="text-right"><NavLink className="nav-link" to="/add">New Dream</NavLink></Nav.Item>
                 <Button className="nav-link text-right" variant="link" onClick={logout}  style={{border:"0"}}>Logout</Button>

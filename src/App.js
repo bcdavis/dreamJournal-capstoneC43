@@ -5,6 +5,7 @@ import { ApplicationViews } from "./components/ApplicationViews.js"
 // import { NavBar } from "./components/nav/NavBar.js"
 import { Header } from "./components/Header.js"
 import { Footer } from "./components/Footer.js"
+import { AuthFooter } from "./components/auth/AuthFooter.js"
 import { Login } from "./components/auth/Login.js"
 import { Register } from "./components/auth/Register.js"
 import "./scss/custom.scss";
@@ -34,14 +35,16 @@ export default function App() {
         <Route exact path="/login">
             {console.log("I am at the Login page")}
             <Login />
-            <Footer />
+            <AuthFooter />
 
         </Route> 
         <Route exact path="/register">
             {console.log("I am at the Register page")}
             <Register />
-            <Footer />
+            <AuthFooter />
         </Route> 
+
+
     </>
   );
 }

@@ -1,19 +1,19 @@
 import React, { useContext, useEffect, useState } from "react" // useContext is the context hook that is used to access context exposed by a parent object
-import {useHistory, useParams} from "react-router-dom"
-import { Col, Container } from 'react-bootstrap';
+import {useHistory, useParams, Link} from "react-router-dom"
+import { Col, Container, Button } from 'react-bootstrap';
 import { JournalContext } from "./JournalProvider.js" // gives us entries, getEntries, addentries
 import { JournalEntry } from "./JournalEntry.js"
 // import { AnimalCard } from "./AnimalCard.js"
 // import { entriesearch } from "./entriesearch.js"
 
 
-export const JournalList = () => {
+export const JournalList = (props) => {
     console.log("--------- Journal List Page ------------");
     const userId = localStorage.getItem("kennel_customer")
     // This state changes when `getEntries()` is invoked below
      const { entries, getEntries } = useContext(JournalContext)
      
-     const history = useHistory();
+    //  const history = useHistory();
 
      const [ sortedDreams, setSortedDreams ] = useState([]);
 
@@ -55,10 +55,19 @@ export const JournalList = () => {
                     <article className="entryList">
                         {
                             sortedDreams.map(item => { //journalArray.map
+                                console.log(item);
 
                                 return (
-                                    <JournalEntry item={item} key={item.id} />
-
+                                    <>
+                                        {/* <li key={item.id}>
+                                            <Link key={item.id} to={`/journalList/${item.id}`}>{item.title}</Link>
+                                        </li> */}
+                                        <JournalEntry entryItem={item} key={item.id}/>
+                                        {/* <Link to={`journalEntry/${item.id}`}>Read</Link> */}
+                                        {/* <Button type="button" className="goToDreamPreviewBtn" onClick={() => {props.history.push(`/journalEntry/${item.id}`)}}>
+                                            <i class="bi bi-journal-text"></i>
+                                        </Button> */}
+                                    </>
 
                                 )
                             })

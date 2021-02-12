@@ -422,6 +422,9 @@ h1, h2, h3, h4, h5, p {
 .card2-content-options{
   margin-left: auto;
   font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   button {
     border: none;
     background-color: transparent;
@@ -724,6 +727,54 @@ main {
 }
 
 
+.footer-auth {
+  margin-top: 4em;
+  justify-content: center;
+  font-size: 0.9em;
+
+  width: 100%;
+  height: 7em;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+
+  .project-author-link{
+    height: inherit;
+    width: 50%;
+    border-right: 1px $gray-300 solid;
+    display: flex;
+    justify-content: flex-end;
+    // background-color: grey;
+  
+  }
+
+  .project-code-link {
+    height: inherit;
+    width: 50%;
+    border-left: 1px $gray-300 solid;
+    display: flex;
+    justify-content: flex-start;
+    // background-color: black;
+  
+  }
+
+  .github-icon-footer{
+    margin-right: 20px;
+    font-size: 1em;
+  }
+  
+
+}
+
+.footer-auth .darken-on-hover {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
 .logDateDataBtn{
   width: 100%;
   height: 1em;
@@ -740,6 +791,21 @@ main {
 .entryForm .entryForm-Title{
   color: black !important;
   margin: 1em 0;
+
+}
+
+.entryForm {
+  margin: 0 auto;
+
+}
+
+
+
+// Audio stuff ===============================================================
+
+#playlist{
+  list-style: none;
+  padding: 0;
 
 }
 
@@ -780,5 +846,463 @@ main {
   margin-bottom: auto;
 }
 
+.backToHome-btn{
+  height: 50%;
+  margin: auto 0;
+}
 
 
+// Login / Register =====================================================
+
+fieldset {
+  min-width: 0;
+  padding: 1rem 0 0 0;
+  margin: 0;
+  border: 0;
+}
+
+.input-label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.form--login {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0.5em;
+  margin: 0 auto;
+  text-align: left;
+  /* background-image: url(logo.png); */
+  z-index: 1;
+  width: 100%;
+
+
+
+  // background-color: hsla(0,0%,100%,0.40);
+}
+
+.form--login--title {
+  padding: 0.5em;
+  height: 2em;
+  letter-spacing: 13px;
+  width: fit-content;
+  font-weight: lighter;
+  color: $gray-800;
+  
+}
+
+
+
+.form--login > fieldset > input[type="email"],
+.form--login > fieldset > input[type="password"] {
+  width: 100%;
+  margin: 0;
+}
+
+// .label--login {
+//   width: 8rem;
+//   display: inline-block;
+// }
+
+// .form-control {
+//   display: block;
+//   width: 94%;
+//   height: calc(1.5em + .75rem + 2px);
+//   padding: .375rem .75rem;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   line-height: 1.5;
+//   color: #495057;
+//   background-color: #fff;
+//   background-clip: padding-box;
+//   border: 1px solid #ced4da;
+//   border-radius: .25rem;
+//   -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+//   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+// }
+
+.container--login {
+  text-align: center;
+  min-height: 50%;
+}
+
+.link--register {
+  margin: 0.5em 0;
+}
+
+
+.auth-section {
+  overflow: hidden;
+
+  border: solid 2px $gray-300;
+  border-radius: 10px;
+  background-color: $gray-200;
+  width: 20em;
+  
+}
+
+.auth-submit-btn {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+.outside-form {
+  margin-top: 2em;
+
+  h2 {
+    
+    margin: 1em 0;
+    font-size: 1.7em;
+    color: $gray-800;
+  }
+}
+
+.center-self {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.button--close {
+  position: relative;
+  bottom: -4em;
+}
+
+.dialog {
+  width: 30rem;
+  height: 10rem;
+  background-color: $red;
+}
+
+.authModal {
+  .modal-footer {
+    justify-content: center;
+    
+    .authModal-closeBtn {
+      width: 10em;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.entryForm-top {
+  justify-content: space-between;
+}
+
+
+
+#output {
+  min-height: 200px; 
+  white-space: pre; 
+  border: 1px solid black;
+}
+
+.div1 {
+  border: 1px solid black; width: 200px; height: 50px; padding: 10px;
+}
+
+.div2 {
+  border: 1px solid black; width: 200px; height: 50px; padding: 10px;
+}
+
+.div3 {
+  border: 1px solid black; width: 200px; height: 50px; padding: 10px;
+}
+
+.div4 {
+  width: 1000px; height: 50px; background: black; 
+}
+
+#time {
+  width: 0%; height: 50px; background: green;
+}
+
+
+// Dream Preview  ======================================================
+
+.dreamPreview {
+  h5{
+    color: black;
+  }
+  p {
+    color: black;
+  }
+  h3 {
+    color: black;
+  }
+}
+
+.goToDreamPreviewBtn {
+  &:hover {
+    background-color: transparent;
+  }
+  i {
+
+    color: $gray-700;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.dreamPreview {
+	margin: 2em 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0 0 5px lightgrey;
+    padding: 10px;
+
+}
+
+.max-width-40em{
+	max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview-top{
+	padding: 0 0.5em;
+    display: flex;
+    
+  align-items: center;
+  height: 4em;
+
+  margin-bottom: 4em;
+}
+
+.dreamEditBtn{
+	font-size: 1.2em;
+    padding: 4px 12px;
+}
+
+.pre-div {
+	/*background-color: lightgrey;*/
+	padding: 0 1em;
+  margin: 1em 0;
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.pre-attributes {
+  // background-color: green;
+}
+
+.pre-text {
+  text-indent: 50px;
+}
+
+.pre-context p {
+  text-indent: 50px;
+  margin-top: 0.5em;
+}
+
+
+.attr-badge {
+	// border: solid 1px black;
+  //   border-radius: 5px;
+  //   width: fit-content;
+  //   padding: 0 0.5em;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: $gray-800 !important;
+}
+
+.pre-attr {
+  // background-color: lightgreen;
+	margin: 0 0 0 1em;
+}
+
+
+.pre-attributes-container {
+  // background-color: lightblue;
+  padding: 1em 0;
+}
+
+
+.pre-audio {
+	display: flex;
+    justify-content: center;
+}
+
+.starBtn-preview {
+  margin-right: 1em;
+  margin-left: auto;
+  background-color: transparent;
+  // justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 56px;
+  height: 56px;
+
+
+  // :hover {
+  //   background-color: white !important;
+
+  // }
+
+  
+
+  i {
+    color: $gray-800;
+    height: 54px;
+    font-size: 2em;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    transition: font-size 0.15s ease 0.0s;
+
+    &:hover {
+        font-size: 1.9em;
+    }
+
+
+  }
+}
+
+
+.backToHomeFromPreview-btn{
+  align-self: flex-start;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-right: 0.5em;
+    font-size: 1.4em;
+  }
+
+  p {
+    color: white;
+    font-size: 1.1em;
+  }
+}
+
+.audioContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .audioFileInputForm {
+    margin-left: 4em;
+
+    .audioFileInput {
+      margin: auto 0;
+    }
+
+  }
+}
+
+.instructions {
+  color: black;
+  text-align: left;
+
+  .margin-bottom-1em {
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style: decimal;
+    margin-bottom: 2em;
+  }
+
+  h4 {
+    @include respond(tab-land){
+      font-size: 1em;
+    }
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+}
+
+
+.entryForm-mic-icon-inst{
+  background-color: $gray-700;
+  padding: 4px;
+  border-radius: 4px;
+  color: white;
+}
+
+.audioFileInputForm {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+
+.ni {
+  background-color: $nightmare;
+}
+
+.ni-t {
+  color: $nightmare;
+}
+
+.ni--dark {
+  background-color: $nightmare-dark;
+}
+
+.ni-t-dark {
+  color: $nightmare-dark;
+}
+
+.ni--light {
+  background-color: $nightmare-light;
+}
+
+.ni-t-light {
+  color: $nightmare-dark;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.form--login--title {
+  @include respond(phone) {
+    font-size: 1.6em;
+  }
+}
+
+.center-self h2 {
+  @include respond(phone) {
+    font-size: 1.3em;
+  }
+}
+
+.card2-date {
+  @include respond(phone) {
+    font-size: 0.8em;
+  }
+}
+
+.card2-content-preview { 
+  @include respond(phone) {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px){
+  .card-2-content-options {
+    font-size: 1em !important;
+    i {
+        font-size: 0.8em !important;
+
+    }
+    .previewBtn{
+
+        font-size: 0.8em !important;
+
+    }
+  }
+
+}

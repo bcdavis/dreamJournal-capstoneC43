@@ -9,27 +9,33 @@
       "email": "shram@gmail.com",
       "name": "Sarah",
       "id": 2
+    },
+    {
+      "email": "l@l",
+      "name": "Boo",
+      "id": 7
+    },
+    {
+      "email": "mlk@gmail.com",
+      "name": "mlk",
+      "id": 8
+    },
+    {
+      "email": "ben@gmail2.com",
+      "name": "Ben",
+      "id": 9
+    },
+    {
+      "email": "dave@gmail.com",
+      "name": "Dave",
+      "id": 10
     }
   ],
   "dreamList": [
     {
-      "id": 1,
-      "userId": 1,
-      "typeId": 1,
-      "title": "My first dream",
-      "text": "It was a good dream",
-      "context": "I was born yesterday",
-      "audioFileLink": "",
-      "entryLastUpdatedDate": "",
-      "dreamdate": "2 4 2021",
-      "isRecurrent": false,
-      "isLucid": true,
-      "isFavorite": true
-    },
-    {
       "id": 2,
       "userId": 1,
-      "typeId": 1,
+      "typeId": "1",
       "title": "My second dream",
       "text": "It was a good dream",
       "context": "I ran around the house until I got tired",
@@ -38,26 +44,35 @@
       "dreamdate": "2 5 2021",
       "isRecurrent": false,
       "isLucid": false,
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": 3,
       "userId": 1,
-      "typeId": 1,
-      "title": "My third dream",
-      "text": "It was a good dream",
+      "typeId": "1",
+      "title": "The Flies",
+      "text": "I squashed a cloud of a thousand flies with a gigantic flyswatter",
       "context": "I killed a bug yesterday",
-      "audioFileLink": "AudioLinkHere...",
+      "audioFileLink": "New_Recording.mp3",
       "entryLastUpdatedDate": "",
       "dreamdate": "2 7 2021",
-      "isRecurrent": true,
-      "isLucid": true,
-      "isFavorite": false
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": true,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "ben@gmail.com",
+        "name": "Ben",
+        "id": 1
+      }
     },
     {
       "id": 4,
       "userId": 2,
-      "typeId": 2,
+      "typeId": "2",
       "title": "My first dream",
       "text": "It was a bad, scary dream",
       "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
@@ -71,7 +86,7 @@
     {
       "id": 5,
       "userId": 2,
-      "typeId": 1,
+      "typeId": "1",
       "title": "Different Style Date",
       "text": "I travelled around the world and said hello to everyone I met.",
       "context": "We learned about Amelia Earhart yesterday in history class.",
@@ -80,12 +95,21 @@
       "dreamdate": "2021 02 09",
       "isRecurrent": false,
       "isLucid": true,
-      "isFavorite": false
+      "isFavorite": false,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "shram@gmail.com",
+        "name": "Sarah",
+        "id": 2
+      }
     },
     {
       "id": 6,
       "userId": 2,
-      "typeId": 2,
+      "typeId": "2",
       "title": "My first dream",
       "text": "It was a bad, scary dream",
       "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
@@ -99,7 +123,7 @@
     {
       "id": 7,
       "userId": 2,
-      "typeId": 1,
+      "typeId": "1",
       "title": "Hello World",
       "text": "I travelled around the world and said hello to everyone I met.",
       "context": "We learned about Amelia Earhart yesterday in history class.",
@@ -113,7 +137,7 @@
     {
       "id": 9,
       "userId": 2,
-      "typeId": 1,
+      "typeId": "1",
       "title": "Hello World",
       "text": "I travelled around the world and said hello to everyone I met.",
       "context": "We learned about Amelia Earhart yesterday in history class.",
@@ -141,7 +165,7 @@
     {
       "id": 11,
       "userId": 2,
-      "typeId": 1,
+      "typeId": "1",
       "title": "Hello World",
       "text": "I travelled around the world and said hello to everyone I met.",
       "context": "We learned about Amelia Earhart yesterday in history class.",
@@ -155,7 +179,7 @@
     {
       "id": 12,
       "userId": 2,
-      "typeId": 2,
+      "typeId": "2",
       "title": "My first dream",
       "text": "It was a bad, scary dream",
       "context": "My dog ate my homework yesterday, and I got a 0 for it in my class!",
@@ -168,18 +192,197 @@
     },
     {
       "userId": "2",
-      "typeId": 1,
-      "title": "New DREAM!!!!",
-      "text": "This WORKSSSS!",
+      "typeId": "1",
+      "title": "Audio dream Cates",
+      "text": "Faceless",
       "context": "This week has been super stressful. :[",
       "audioFileLink": "",
       "entryLastUpdatedDate": "",
-      "dreamdate": "2021 02 09",
+      "dreamdate": "2021 02 10",
+      "isRecurrent": true,
+      "isLucid": true,
+      "isFavorite": true,
+      "id": 13,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "shram@gmail.com",
+        "name": "Sarah",
+        "id": 2
+      }
+    },
+    {
+      "userId": "2",
+      "typeId": "1",
+      "title": "New DREAM!!!! with audio?",
+      "text": "Please audio?",
+      "context": "Hello Hello helllo",
+      "audioFileLink": "C:\\fakepath\\fbac9bbc-8233-4168-9d0e-ca82d7e88299.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2021 02 11",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false,
+      "id": 14
+    },
+    {
+      "userId": "7",
+      "typeId": "1",
+      "title": "Boo",
+      "text": "",
+      "context": "",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false,
+      "id": 15
+    },
+    {
+      "userId": "2",
+      "typeId": "1",
+      "title": "Better date?",
+      "text": "",
+      "context": "",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/11/2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false,
+      "id": 16
+    },
+    {
+      "userId": "2",
+      "typeId": "1",
+      "title": "NEEEEW DATE",
+      "text": "",
+      "context": "",
+      "audioFileLink": "",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/11/2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true,
+      "id": 17,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "shram@gmail.com",
+        "name": "Sarah",
+        "id": 2
+      }
+    },
+    {
+      "userId": "8",
+      "typeId": "1",
+      "title": "I have a dream",
+      "text": "Everyone is equal",
+      "context": "Had a pretty busy day today.",
+      "audioFileLink": "C:\\fakepath\\fbac9bbc-8233-4168-9d0e-ca82d7e88299.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/11/2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true,
+      "id": 18,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "mlk@gmail.com",
+        "name": "mlk",
+        "id": 8
+      }
+    },
+    {
+      "userId": "1",
+      "typeId": "2",
+      "title": "Dreaming of graduating",
+      "text": "I never graduated!",
+      "context": "Final week of NSS C43. ",
+      "audioFileLink": "C:\\fakepath\\fbac9bbc-8233-4168-9d0e-ca82d7e88299.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2021 02 12",
       "isRecurrent": true,
       "isLucid": true,
       "isFavorite": false,
-      "type": "1",
-      "id": 13
+      "id": 19,
+      "type": {
+        "id": 2,
+        "name": "nightmare"
+      },
+      "user": {
+        "email": "ben@gmail.com",
+        "name": "Ben",
+        "id": 1
+      }
+    },
+    {
+      "userId": "1",
+      "typeId": "2",
+      "title": "I got really old",
+      "text": "Like really, really old. ",
+      "context": "I watched a scary movie last night.",
+      "audioFileLink": "C:\\fakepath\\fbac9bbc-8233-4168-9d0e-ca82d7e88299.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/11/2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true,
+      "id": 20
+    },
+    {
+      "userId": "9",
+      "typeId": "2",
+      "title": "This is the first dream on friday",
+      "text": "Graduated NSS",
+      "context": "Final Day of NSS, demoing to employers.",
+      "audioFileLink": "C:\\fakepath\\5ac7391c-cde6-45ec-b40a-5b94a79a6953.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/12/2021",
+      "isRecurrent": false,
+      "isLucid": false,
+      "isFavorite": false,
+      "id": 21,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "ben@gmail2.com",
+        "name": "Ben",
+        "id": 9
+      }
+    },
+    {
+      "userId": "10",
+      "typeId": "2",
+      "title": "New dream, on friday",
+      "text": "I never graduated!! :(",
+      "context": "Final week of NSS. Been really stressful!",
+      "audioFileLink": "C:\\fakepath\\5ac7391c-cde6-45ec-b40a-5b94a79a6953.mp3",
+      "entryLastUpdatedDate": "",
+      "dreamdate": "2/12/2021",
+      "isRecurrent": false,
+      "isLucid": true,
+      "isFavorite": true,
+      "id": 22,
+      "type": {
+        "id": 1,
+        "name": "dream"
+      },
+      "user": {
+        "email": "dave@gmail.com",
+        "name": "Dave",
+        "id": 10
+      }
     }
   ],
   "types": [
